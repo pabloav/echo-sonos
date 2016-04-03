@@ -1,20 +1,13 @@
 PlayIntent play {Preset}
 
-PlaylistIntent playlist {Preset} in {Room}
-PlaylistIntent playlist {Preset} in the {Room}
-PlaylistIntent play playlist {Preset} in {Room}
-PlaylistIntent play playlist {Preset} in the {Room}
-PlaylistIntent start playlist {Preset} in {Room}
-PlaylistIntent start playlist {Preset} in the {Room}
+PlaylistIntent playlist {Preset} {Preposition} {Room}
+PlaylistIntent play playlist {Preset} {Preposition} {Room}
+PlaylistIntent start playlist {Preset} {Preposition} {Room}
 
-FavoriteIntent favorite {Preset} in {Room}
-FavoriteIntent favorite {Preset} in the {Room}
-FavoriteIntent play {Preset} in {Room}
-FavoriteIntent play {Preset} in the {Room}
-FavoriteIntent play favorite {Preset} in {Room}
-FavoriteIntent play favorite {Preset} in the {Room}
-FavoriteIntent start favorite {Preset} in {Room}
-FavoriteIntent start favorite {Preset} in the {Room}
+FavoriteIntent favorite {Preset} {Preposition} {Room}
+FavoriteIntent play {Preset} {Preposition} {Room}
+FavoriteIntent play favorite {Preset} {Preposition} {Room}
+FavoriteIntent start favorite {Preset} {Preposition} {Room}
 
 ResumeAllIntent resume all
 ResumeAllIntent continue all
@@ -22,159 +15,93 @@ ResumeAllIntent continue playing all
 ResumeAllIntent continue playing all the music
 
 
-ResumeIntent continue the {Room}
-ResumeIntent continue in the {Room}
-ResumeIntent continue the music in {Room}
-ResumeIntent continue the music in the {Room}
-ResumeIntent continue playing the {Room}
-ResumeIntent continue playing in the {Room}
-ResumeIntent continue playing the music in {Room}
-ResumeIntent continue playing the music in the {Room}
-ResumeIntent resume the {Room}
-ResumeIntent resume in the {Room}
-ResumeIntent resume the music in {Room}
-ResumeIntent resume the music in the {Room}
+ResumeIntent continue {Preposition} {Room}
+ResumeIntent continue the music {Preposition} {Room}
+ResumeIntent continue playing {Preposition} {Room}
+ResumeIntent continue playing the music {Preposition} {Room}
+ResumeIntent resume {Room}
+ResumeIntent resume {Preposition} {Room}
+ResumeIntent resume the music {Preposition} {Room}
 
 PauseAllIntent pause all
 PauseAllIntent pause all the music
 PauseAllIntent stop all
 PauseAllIntent stop all the music 
 
-PauseIntent pause in the {Room}
-PauseIntent pause in {Room}
-PauseIntent pause the music in {Room}
-PauseIntent stop in the {Room}
-PauseIntent stop in {Room}
-PauseIntent stop the music in {Room}
+PauseIntent pause {Preposition} {Room}
+PauseIntent pause {Room}
+PauseIntent pause the music {Preposition} {Room}
+PauseIntent stop {Preposition} {Room}
+PauseIntent stop the music {Preposition} {Room}
 
+VolumeUpIntent turn it up {Preposition} {Room}
+VolumeUpIntent turn the volume up {Preposition} {Room}
+VolumeUpIntent louder {Preposition} {Room}
+VolumeUpIntent volume up {Preposition} {Room}
 
-VolumeUpIntent turn it up in {Room}
-VolumeUpIntent turn it up in the {Room}
-VolumeUpIntent turn the volume up in {Room}
-VolumeUpIntent turn the volume up in the {Room}
-VolumeUpIntent louder in {Room}
-VolumeUpIntent louder in the {Room}
-VolumeUpIntent volume up in {Room}
-VolumeUpIntent volume up in the {Room}
+VolumeDownIntent turn it down {Preposition} {Room}
+VolumeDownIntent turn the volume down {Preposition} {Room}
+VolumeDownIntent softer {Preposition} {Room}
+VolumeDownIntent quieter {Preposition} {Room}
+VolumeDownIntent volume down {Preposition} {Room}
 
-VolumeDownIntent turn it down in {Room}
-VolumeDownIntent turn it down in the {Room}
-VolumeDownIntent turn the volume down in {Room}
-VolumeDownIntent turn the volume down in the {Room}
-VolumeDownIntent softer in {Room}
-VolumeDownIntent softer in the {Room}
-VolumeDownIntent quieter in {Room}
-VolumeDownIntent quieter in the {Room}
-VolumeDownIntent volume down in {Room}
-VolumeDownIntent volume down in the {Room}
+SetVolumeIntent set volume to {Percent} {Preposition} {Room}
+SetVolumeIntent set volume to {Percent} percent {Preposition} {Room}
+SetVolumeIntent change volume to {Percent} {Preposition} {Room}
+SetVolumeIntent change volume to {Percent} percent {Preposition} {Room}
+SetVolumeIntent change the volume to {Percent} {Preposition} {Room}
+SetVolumeIntent change the volume to {Percent} percent {Preposition} {Room}
+SetVolumeIntent turn it up to {Percent} {Preposition} {Room}
+SetVolumeIntent turn it up to {Percent} percent {Preposition} {Room}
+SetVolumeIntent turn it down to {Percent} {Preposition} {Room}
+SetVolumeIntent turn it down to {Percent} percent {Preposition} {Room}
 
-SetVolumeIntent set volume to {Percent} in {Room}
-SetVolumeIntent set volume to {Percent} percent in {Room}
-SetVolumeIntent set volume to {Percent} in the {Room}
-SetVolumeIntent set volume to {Percent} percent in the {Room}
-SetVolumeIntent change volume to {Percent} in {Room}
-SetVolumeIntent change volume to {Percent} percent in {Room}
-SetVolumeIntent change volume to {Percent} in the {Room}
-SetVolumeIntent change volume to {Percent} percent in the {Room}
-SetVolumeIntent change the volume to {Percent} in {Room}
-SetVolumeIntent change the volume to {Percent} percent in {Room}
-SetVolumeIntent change the volume to {Percent} in the {Room}
-SetVolumeIntent change the volume to {Percent} percent in the {Room}
-SetVolumeIntent turn it up to {Percent} in {Room}
-SetVolumeIntent turn it up to {Percent} percent in {Room}
-SetVolumeIntent turn it up to {Percent} in the {Room}
-SetVolumeIntent turn it up to {Percent} percent in the {Room}
-SetVolumeIntent turn it down to {Percent} in {Room}
-SetVolumeIntent turn it down to {Percent} percent in {Room}
-SetVolumeIntent turn it down to {Percent} in the {Room}
-SetVolumeIntent turn it down to {Percent} percent in the {Room}
+NextTrackIntent go to next track {Preposition} {Room}
+NextTrackIntent go to the next track {Preposition} {Room}
+NextTrackIntent skip to next track {Preposition} {Room}
+NextTrackIntent skip to the next track {Preposition} {Room}
+NextTrackIntent skip {Preposition} {Room}
+NextTrackIntent next {Preposition} {Room}
+NextTrackIntent next track {Preposition} {Room}
+NextTrackIntent next song {Preposition} {Room}
+NextTrackIntent skip this track {Preposition} {Room}
+NextTrackIntent skip song {Preposition} {Room}
+NextTrackIntent skip this song {Preposition} {Room}
 
-NextTrackIntent go to next track in {Room}
-NextTrackIntent go to next track in the {Room}
-NextTrackIntent go to the next track in {Room}
-NextTrackIntent go to the next track in the {Room}
-NextTrackIntent skip to next track in {Room}
-NextTrackIntent skip to next track in the {Room}
-NextTrackIntent skip to the next track in {Room}
-NextTrackIntent skip to the next track in the {Room}
-NextTrackIntent skip in {Room}
-NextTrackIntent skip in the {Room}
-NextTrackIntent next in {Room}
-NextTrackIntent next in the {Room}
-NextTrackIntent next track in {Room}
-NextTrackIntent next track in the {Room}
-NextTrackIntent next song in {Room}
-NextTrackIntent next song in the {Room}
-NextTrackIntent skip this track in {Room}
-NextTrackIntent skip this track in the {Room}
-NextTrackIntent skip song in {Room}
-NextTrackIntent skip song in the {Room}
-NextTrackIntent skip this song in {Room}
-NextTrackIntent skip this song in the {Room}
+PreviousTrackIntent go to previous track {Preposition} {Room}
+PreviousTrackIntent go to the previous track {Preposition} {Room}
+PreviousTrackIntent go to the last song {Preposition} {Room}
+PreviousTrackIntent go back {Preposition} {Room}
+PreviousTrackIntent go back to the previous track {Preposition} {Room}
+PreviousTrackIntent last track {Preposition} {Room}
+PreviousTrackIntent last song {Preposition} {Room}
+PreviousTrackIntent previous track {Preposition} {Room}
+PreviousTrackIntent previous song {Preposition} {Room}
 
-PreviousTrackIntent go to previous track in {Room}
-PreviousTrackIntent go to previous track in the {Room}
-PreviousTrackIntent go to the previous track in {Room}
-PreviousTrackIntent go to the previous track in the {Room}
-PreviousTrackIntent go to the last song in {Room}
-PreviousTrackIntent go to the last song in the {Room}
-PreviousTrackIntent go back in {Room}
-PreviousTrackIntent go back in the {Room}
-PreviousTrackIntent go back to the previous track in {Room}
-PreviousTrackIntent go back to the previous track in the {Room}
-PreviousTrackIntent last track in {Room}
-PreviousTrackIntent last track in the {Room}
-PreviousTrackIntent last song in {Room}
-PreviousTrackIntent last song in the {Room}
-PreviousTrackIntent previous track in {Room}
-PreviousTrackIntent previous track in the {Room}
-PreviousTrackIntent previous song in {Room}
-PreviousTrackIntent previous song in the {Room}
+ClearQueueIntent clear the queue {Preposition} {Room}
+ClearQueueIntent clear queue {Preposition} {Room}
+ClearQueueIntent clear playlist {Preposition} {Room}
 
-ClearQueueIntent clear the queue in {Room}
-ClearQueueIntent clear the queue in the {Room}
-ClearQueueIntent clear queue in {Room}
-ClearQueueIntent clear queue in the {Room}
-ClearQueueIntent clear playlist in {Room}
-ClearQueueIntent clear playlist in the {Room}
+WhatsPlayingIntent what's playing {Preposition} {Room}
+WhatsPlayingIntent what song is this {Preposition} {Room}
+WhatsPlayingIntent what band is this {Preposition} {Room}
+WhatsPlayingIntent who's playing {Preposition} {Room}
+WhatsPlayingIntent what am i hearing {Preposition} {Room}
 
-WhatsPlayingIntent what's playing in {Room}
-WhatsPlayingIntent what's playing in the {Room}
-WhatsPlayingIntent what song is this in {Room}
-WhatsPlayingIntent what song is this in the {Room}
-WhatsPlayingIntent what band is this in {Room}
-WhatsPlayingIntent what band is this in the {Room}
-WhatsPlayingIntent who's playing in {Room}
-WhatsPlayingIntent who's playing in the {Room}
-WhatsPlayingIntent what am i hearing in the {Room}
-
-MuteIntent mute in {Room}
-MuteIntent mute in the {Room}
+MuteIntent mute {Preposition} {Room}
 MuteIntent mute {Room}
-MuteIntent mute the {Room}
 
-UnmuteIntent unmute in {Room}
-UnmuteIntent unmute in the {Room}
+UnmuteIntent unmute {Preposition} {Room}
 UnmuteIntent unmute {Room}
-UnmuteIntent unmute the {Room}
 
-RepeatIntent turn {Toggle} repeat in {Room}
-RepeatIntent turn {Toggle} repeat in the {Room}
-RepeatIntent turn repeat {Toggle} in {Room}
-RepeatIntent turn repeat {Toggle} in the {Room}
-RepeatIntent repeat {Toggle} in {Room}
-RepeatIntent repeat {Toggle} in the {Room}
+RepeatIntent turn {Toggle} repeat {Preposition} {Room}
+RepeatIntent turn repeat {Toggle} {Preposition} {Room}
+RepeatIntent repeat {Toggle} {Preposition} {Room}
 
-ShuffleIntent turn {Toggle} shuffle in {Room}
-ShuffleIntent turn {Toggle} shuffle in the {Room}
-ShuffleIntent turn shuffle {Toggle} in {Room}
-ShuffleIntent turn shuffle {Toggle} in the {Room}
-ShuffleIntent shuffle {Toggle} in {Room}
-ShuffleIntent shuffle {Toggle} in the {Room}
+ShuffleIntent turn {Toggle} shuffle {Preposition} {Room}
+ShuffleIntent turn shuffle {Toggle} {Preposition} {Room}
+ShuffleIntent shuffle {Toggle} {Preposition} {Room}
 
-CrossfadeIntent turn {Toggle} crossfade in {Room}
-CrossfadeIntent turn {Toggle} crossfade in the {Room}
-CrossfadeIntent turn crossfade {Toggle} in {Room}
-CrossfadeIntent turn crossfade {Toggle} in the {Room}
-CrossfadeIntent crossfade {Toggle} in {Room}
-CrossfadeIntent crossfade {Toggle} in the {Room}
+CrossfadeIntent turn {Toggle} crossfade {Preposition} {Room}
+CrossfadeIntent turn crossfade {Toggle} {Preposition} {Room}
+CrossfadeIntent crossfade {Toggle} {Preposition} {Room}
