@@ -106,7 +106,7 @@ CrossfadeIntent turn {Toggle} crossfade {Preposition} {Room}
 CrossfadeIntent turn crossfade {Toggle} {Preposition} {Room}
 CrossfadeIntent crossfade {Toggle} {Preposition} {Room}
 
-TellInent tell {Preposition} {Room} that {AnnouncePhrase}
-TellInent tell {Preposition} {Room} {AnnouncePhrase}
+TellIntent tell {Preposition} {Room} that {AnnouncePhrase}
+TellIntent tell {Preposition} {Room} {AnnouncePhrase}
 
 AnnounceIntent announce {AnnouncePhrase}
