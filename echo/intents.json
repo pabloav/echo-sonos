@@ -269,7 +269,37 @@
             "type": "PREPOSITIONS"
         }
       ]
+    },
+
+    {
+      "intent":  "TellIntent",
+      "slots": [
+        {
+            "name": "Preposition",
+            "type": "PREPOSITIONS"
+        },
+        {
+            "name": "Room",
+            "type": "ROOMS"
+        },
+        {
+            "name": "AnnouncePhrase",
+            "type": "ANNOUNCEPHRASES"
+        }
+      ]
+    },
+
+    {
+      "intent":  "AnnounceIntent",
+      "slots": [
+        {
+            "name": "AnnouncePhrase",
+            "type": "ANNOUNCEPHRASES"
+        }
+      ]
+	  
     }
+	
   ]
 }
 
